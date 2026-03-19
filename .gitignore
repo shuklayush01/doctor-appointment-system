@@ -1,0 +1,20 @@
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Database / local files
+
+*.db
+
+# Environment files
+
+.env
+
+# VS Code settings
+
+.vscode/
+
+# System files
+
+.DS_Store
