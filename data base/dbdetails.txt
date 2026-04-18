@@ -1,0 +1,10 @@
+Account Details
+Account Number	Available Databases	Available Space
+1685077	0        of 1	                 0% of 5.00MB
+
+
+Host: sql12.freesqldatabase.com
+Database name: sql12823644
+Database user: sql12823644
+Database password: uQ52IMPjUd
+Port number: 3306freesqldatabase.com	sql12823644	sql12823644	Please wait	0.00MB	Please wait
