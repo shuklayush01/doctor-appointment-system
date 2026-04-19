@@ -12,9 +12,9 @@ CORS(app)
 JWTManager(app)
 
 from routes.auth import auth_bp
-from routes.doctor import doctors_bp
-from routes.appointment import appointments_bp
-from routes.patient import patients_bp
+from routes.doctors import doctors_bp
+from routes.appointments import appointments_bp
+from routes.patients import patients_bp
 from routes.admin import admin_bp
 
 app.register_blueprint(auth_bp,         url_prefix='/api/auth')
@@ -23,7 +23,9 @@ app.register_blueprint(appointments_bp, url_prefix='/api/appointments')
 app.register_blueprint(patients_bp,     url_prefix='/api/patients')
 app.register_blueprint(admin_bp,        url_prefix='/api/admin')
 
+# this runs always — even with gunicorn
+with app.app_context():
+    db.create_all()
+
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
     app.run(debug=True)
