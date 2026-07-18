@@ -2,10 +2,6 @@
 
 A full stack web application for booking doctor appointments.
 
-##  Live Demo
-- Frontend: https://docbook.vercel.app
-- Backend API: https://docbook-backend.onrender.com
-
 ##  Tech Stack
 - **Frontend:** React, Vite, Axios, React Router
 - **Backend:** Python, Flask, SQLAlchemy, JWT
